@@ -1,0 +1,24 @@
+<?php
+
+
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\PropertyContainer\PageController as PropertyContainer;
+use App\Http\Controllers\Delegation\PageController as Delegation;
+use App\Http\Controllers\EventChanel\PageController as EventChanel;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', [MainController::class, 'start']);
+Route::get('property-container', [PropertyContainer::class, 'start'])->name('propertyContainer');
+Route::get('delegation', [Delegation::class, 'start'])->name('delegation');
+Route::get('event-chanel', [EventChanel::class, 'start'])->name('eventChanel');
