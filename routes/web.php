@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\AbstractFabric\PageController as AbstractFabric;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PropertyContainer\PageController as PropertyContainer;
 use App\Http\Controllers\Delegation\PageController as Delegation;
@@ -22,3 +23,4 @@ Route::get('/', [MainController::class, 'start']);
 Route::get('property-container', [PropertyContainer::class, 'start'])->name('propertyContainer');
 Route::get('delegation', [Delegation::class, 'start'])->name('delegation');
 Route::get('event-chanel', [EventChanel::class, 'start'])->name('eventChanel');
+Route::get('abstract-fabric', [AbstractFabric::class, 'start'])->name('abstractFabric');
