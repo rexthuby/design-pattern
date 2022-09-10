@@ -2,10 +2,12 @@
 
 
 use App\Http\Controllers\AbstractFabric\PageController as AbstractFabric;
+use App\Http\Controllers\AbstractMethod\PageController as AbstractMethod;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PropertyContainer\PageController as PropertyContainer;
 use App\Http\Controllers\Delegation\PageController as Delegation;
 use App\Http\Controllers\EventChanel\PageController as EventChanel;
+use App\Http\Controllers\SimpleFabric\PageController as SimpleFabric;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +26,5 @@ Route::get('property-container', [PropertyContainer::class, 'start'])->name('pro
 Route::get('delegation', [Delegation::class, 'start'])->name('delegation');
 Route::get('event-chanel', [EventChanel::class, 'start'])->name('eventChanel');
 Route::get('abstract-fabric', [AbstractFabric::class, 'start'])->name('abstractFabric');
+Route::get('abstract-method', [AbstractMethod::class, 'start'])->name('abstractMethod');
+//Route::get('simple-fabric', [SimpleFabric::class, 'start'])->name('simpleFabric');
