@@ -27,4 +27,4 @@ Route::get('delegation', [Delegation::class, 'start'])->name('delegation');
 Route::get('event-chanel', [EventChanel::class, 'start'])->name('eventChanel');
 Route::get('abstract-fabric', [AbstractFabric::class, 'start'])->name('abstractFabric');
 Route::get('abstract-method', [AbstractMethod::class, 'start'])->name('abstractMethod');
-//Route::get('simple-fabric', [SimpleFabric::class, 'start'])->name('simpleFabric');
+Route::get('simple-fabric', [SimpleFabric::class, 'start'])->name('simpleFabric');
