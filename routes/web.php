@@ -11,6 +11,7 @@ use App\Http\Controllers\SimpleFabric\PageController as SimpleFabric;
 use App\Http\Controllers\StaticFabric\PageController as StaticFabric;
 use App\Http\Controllers\Singleton\PageController as Singleton;
 use App\Http\Controllers\Multiton\PageController as Multiton;
+use App\Http\Controllers\Builder\PageController as Builder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,3 +35,4 @@ Route::get('simple-fabric', [SimpleFabric::class, 'start'])->name('simpleFabric'
 Route::get('static-fabric', [StaticFabric::class, 'start'])->name('staticFabric');
 Route::get('singleton', [Singleton::class, 'start'])->name('singleton');
 Route::get('multiton', [Multiton::class, 'start'])->name('multiton');
+Route::get('builder', [Builder::class, 'start'])->name('builder');
