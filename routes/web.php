@@ -10,6 +10,7 @@ use App\Http\Controllers\EventChanel\PageController as EventChanel;
 use App\Http\Controllers\SimpleFabric\PageController as SimpleFabric;
 use App\Http\Controllers\StaticFabric\PageController as StaticFabric;
 use App\Http\Controllers\Singleton\PageController as Singleton;
+use App\Http\Controllers\Multiton\PageController as Multiton;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,4 @@ Route::get('abstract-method', [AbstractMethod::class, 'start'])->name('abstractM
 Route::get('simple-fabric', [SimpleFabric::class, 'start'])->name('simpleFabric');
 Route::get('static-fabric', [StaticFabric::class, 'start'])->name('staticFabric');
 Route::get('singleton', [Singleton::class, 'start'])->name('singleton');
+Route::get('multiton', [Multiton::class, 'start'])->name('multiton');

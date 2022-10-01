@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Singleton;
 
-class Logger
+class Logger implements SingletonInterface
 {
     use SingletonTrait;
 

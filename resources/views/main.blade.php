@@ -9,4 +9,5 @@
     <a href="{{route('simpleFabric')}}">Simple fabric</a>
     <a href="{{route('staticFabric')}}">Static fabric</a>
     <a href="{{route('singleton')}}">Singleton</a>
+    <a href="{{route('multiton')}}">Multiton</a>
 @endsection
