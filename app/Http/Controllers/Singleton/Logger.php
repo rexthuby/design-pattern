@@ -12,7 +12,7 @@ class Logger implements SingletonInterface
      * @param $param
      * @return void
      */
-    public function setProprety($param):void
+    public function setProperty($param):void
     {
         $this->proprety = $param;
     }

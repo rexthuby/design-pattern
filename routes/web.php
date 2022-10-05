@@ -12,6 +12,7 @@ use App\Http\Controllers\StaticFabric\PageController as StaticFabric;
 use App\Http\Controllers\Singleton\PageController as Singleton;
 use App\Http\Controllers\Multiton\PageController as Multiton;
 use App\Http\Controllers\Builder\PageController as Builder;
+use App\Http\Controllers\LazyLoad\PageController as LazyLoad;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,3 +37,4 @@ Route::get('static-fabric', [StaticFabric::class, 'start'])->name('staticFabric'
 Route::get('singleton', [Singleton::class, 'start'])->name('singleton');
 Route::get('multiton', [Multiton::class, 'start'])->name('multiton');
 Route::get('builder', [Builder::class, 'start'])->name('builder');
+Route::get('lazy-load', [LazyLoad::class, 'start'])->name('lazyLoad');
