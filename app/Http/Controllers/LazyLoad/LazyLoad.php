@@ -13,7 +13,6 @@ class LazyLoad
         if (is_null($this->user)) {
             $this->user = new User();
             echo 'user init';
-            return;
         }
         $this->user->setName($username);
     }

@@ -12,4 +12,5 @@
     <a href="{{route('multiton')}}">Multiton</a>
     <a href="{{route('builder')}}">Builder</a>
     <a href="{{route('lazyLoad')}}">Lazy load</a>
+    <a href="{{route('prototype')}}">Prototype</a>
 @endsection
