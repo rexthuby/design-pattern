@@ -14,6 +14,7 @@ use App\Http\Controllers\Multiton\PageController as Multiton;
 use App\Http\Controllers\Builder\PageController as Builder;
 use App\Http\Controllers\LazyLoad\PageController as LazyLoad;
 use App\Http\Controllers\Prototype\PageController as Prototype;
+use App\Http\Controllers\Strategy\PageController as Strategy;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,4 @@ Route::get('multiton', [Multiton::class, 'start'])->name('multiton');
 Route::get('builder', [Builder::class, 'start'])->name('builder');
 Route::get('lazy-load', [LazyLoad::class, 'start'])->name('lazyLoad');
 Route::get('prototype', [Prototype::class, 'start'])->name('prototype');
+Route::get('strategy', [Strategy::class, 'start'])->name('strategy');
