@@ -16,6 +16,7 @@ use App\Http\Controllers\LazyLoad\PageController as LazyLoad;
 use App\Http\Controllers\Prototype\PageController as Prototype;
 use App\Http\Controllers\Strategy\PageController as Strategy;
 use App\Http\Controllers\Adapter\PageController as Adapter;
+use App\Http\Controllers\Facade\PageController as Facade;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,3 +45,4 @@ Route::get('lazy-load', [LazyLoad::class, 'start'])->name('lazyLoad');
 Route::get('prototype', [Prototype::class, 'start'])->name('prototype');
 Route::get('strategy', [Strategy::class, 'start'])->name('strategy');
 Route::get('adapter', [Adapter::class, 'start'])->name('adapter');
+Route::get('facade', [Facade::class, 'start'])->name('facade');

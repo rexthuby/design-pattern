@@ -15,4 +15,5 @@
     <a href="{{route('prototype')}}">Prototype</a>
     <a href="{{route('strategy')}}">Strategy</a>
     <a href="{{route('adapter')}}">Adapter</a>
+    <a href="{{route('facade')}}">Facade</a>
 @endsection
