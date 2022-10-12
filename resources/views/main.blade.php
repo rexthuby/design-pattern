@@ -14,4 +14,5 @@
     <a href="{{route('lazyLoad')}}">Lazy load</a>
     <a href="{{route('prototype')}}">Prototype</a>
     <a href="{{route('strategy')}}">Strategy</a>
+    <a href="{{route('adapter')}}">Adapter</a>
 @endsection
