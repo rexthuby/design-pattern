@@ -18,6 +18,7 @@ use App\Http\Controllers\Strategy\PageController as Strategy;
 use App\Http\Controllers\Adapter\PageController as Adapter;
 use App\Http\Controllers\Facade\PageController as Facade;
 use App\Http\Controllers\Bridge\PageController as Bridge;
+use App\Http\Controllers\Composite\PageController as Composite;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +49,4 @@ Route::get('strategy', [Strategy::class, 'start'])->name('strategy');
 Route::get('adapter', [Adapter::class, 'start'])->name('adapter');
 Route::get('facade', [Facade::class, 'start'])->name('facade');
 Route::get('bridge', [Bridge::class, 'start'])->name('bridge');
+Route::get('composite', [Composite::class, 'start'])->name('composite');
