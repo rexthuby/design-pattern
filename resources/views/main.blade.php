@@ -18,4 +18,5 @@
     <a href="{{route('facade')}}">Facade</a>
     <a href="{{route('bridge')}}">Bridge</a>
     <a href="{{route('composite')}}">Composite</a>
+    <a href="{{route('decorator')}}">Decorator</a>
 @endsection
