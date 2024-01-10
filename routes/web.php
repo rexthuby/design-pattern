@@ -20,6 +20,7 @@ use App\Http\Controllers\Facade\PageController as Facade;
 use App\Http\Controllers\Bridge\PageController as Bridge;
 use App\Http\Controllers\Composite\PageController as Composite;
 use App\Http\Controllers\Decorator\PageController as Decorator;
+use App\Http\Controllers\Manager\PageController as Manager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +53,4 @@ Route::get('facade', [Facade::class, 'start'])->name('facade');
 Route::get('bridge', [Bridge::class, 'start'])->name('bridge');
 Route::get('composite', [Composite::class, 'start'])->name('composite');
 Route::get('decorator', [Decorator::class, 'start'])->name('decorator');
+Route::get('manager', [Manager::class, 'start'])->name('manager');
